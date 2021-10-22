@@ -42,6 +42,6 @@ class FlowerTest {
 
     @org.junit.jupiter.api.Test
     void getFlowerBucketPrice() {
-        assertEquals(3210, bucky.getPrice());
+        assertEquals(3200, bucky.getPrice());
     }
 }
