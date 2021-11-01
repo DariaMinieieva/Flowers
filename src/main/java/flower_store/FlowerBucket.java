@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class FlowerBucket {
+public class FlowerBucket extends Item {
     List<FlowerPack> flowerPacks = new ArrayList<FlowerPack>();
     List<Flower> flowerTypesBuck = new ArrayList<Flower>();
 
@@ -25,5 +25,10 @@ public class FlowerBucket {
             res += flowerPacks.get(i).getPrice();
         }
         return res;
+    }
+
+    @Override
+    public String getDescription() {
+        return "Bucket";
     }
 }
